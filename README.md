@@ -4,10 +4,10 @@
     1.3 in terminal run celery -A api_ai worker -l info -P eventlet
 2. in another terminal run python manage.py runserver
 3. Functions:
-    - create user: post request to 'api/user/' body: {'username': 'yourusername', 'email': 'youremail', 'password': 'yourpassword'}
+    - create user: post request to 'api/user/' body: {"username": "yourusername", "email": "youremail", "password": "yourpassword"}
     - get token: post request to 'api/token/', body: {'username': 'yourusername', 'password': 'yourpassword'}
-    - create post: post request to 'api/post/', body: {'title': 'posttitle', 'content': 'postcontent'} headers:{'Authorization': 'Token yourtoken'}
-    - create comment: post request to 'api/comment/', body: {'post_id': 'post_id', 'content': 'commentcontent'} headers: {'Authorization': 'Token yourtoken'}
+    - create post: post request to 'api/post/', body: {"title": "posttitle", "content": "postcontent"} headers:{"Authorization": "Token yourtoken"}
+    - create comment: post request to 'api/comment/', body: {"post_id": "post_id", "content": "commentcontent"} headers: {"Authorization": "Token yourtoken"}
     - get post: get request to 'api/post/{post_id}/'
     - get comment: get request to 'api/comment/{comment_id}/'
     - get all posts: get request to 'api/post/'
